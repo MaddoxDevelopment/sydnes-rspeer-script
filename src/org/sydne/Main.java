@@ -1,3 +1,5 @@
+
+/*
 package org.sydne;
 
 import org.rspeer.runetek.api.scene.Players;
@@ -14,7 +16,6 @@ import org.sydne.leafs.cutthewood.bank.BankLeaf;
 import org.sydne.leafs.cutthewood.woodcutting.WoodCuttingLeaf;
 
 import java.util.List;
-
 @ScriptMeta(developer = "Sydne", desc = "Woodcutter", name = "Woodcutter")
 public class Main extends Script implements RenderListener {
 
@@ -60,3 +61,4 @@ public class Main extends Script implements RenderListener {
         }
     }
 }
+*/
