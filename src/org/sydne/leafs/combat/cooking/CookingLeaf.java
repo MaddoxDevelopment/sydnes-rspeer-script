@@ -1,6 +1,8 @@
 package org.sydne.leafs.combat.cooking;
 
+import org.rspeer.runetek.adapter.scene.Player;
 import org.rspeer.runetek.api.component.tab.Inventory;
+import org.rspeer.runetek.api.scene.Players;
 import org.sydne.leafs.Leaf;
 
 import java.util.Collections;

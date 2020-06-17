@@ -9,7 +9,7 @@ import static org.sydne.leafs.combat.attacking.children.GetToChickenLeaf.chicken
 public class ClickChickenLeaf implements Leaf {
     @Override
     public boolean validate() {
-        return true;
+        return chicken != null;
     }
 
     @Override

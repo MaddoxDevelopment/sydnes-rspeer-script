@@ -1,5 +1,6 @@
 package org.sydne;
 
+import org.rspeer.runetek.api.scene.Players;
 import org.rspeer.runetek.event.listeners.RenderListener;
 import org.rspeer.runetek.event.types.RenderEvent;
 import org.rspeer.script.Script;
@@ -17,11 +18,15 @@ import java.util.List;
 @ScriptMeta(developer = "Sydne", desc = "Woodcutter", name = "Woodcutter")
 public class Main extends Script implements RenderListener {
 
-    List<Leaf> leaves = List.of(new DropUnwanted(List.of("Burnt chicken")), new CookingLeaf(), new LootingLeaf(), new AttackingLeaf());
+    List<Leaf> leaves = List.of(new CookingLeaf(), new DropUnwanted(List.of("Burnt chicken")), new LootingLeaf(), new AttackingLeaf());
     Leaf currentLeaf = null;
 
     @Override
     public int loop() {
+
+        if(Players.getLocal().isAnimating()) {
+            return 300;
+        }
 
         for (Leaf leaf : leaves) {
             if(leaf.validate()){
