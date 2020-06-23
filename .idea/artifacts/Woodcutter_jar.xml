@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" build-on-make="true" name="Woodcutter:jar">
-    <output-path>$USER_HOME$/RSPeer/scripts</output-path>
+    <output-path>$USER_HOME$/runelite-farm/scripts</output-path>
     <root id="archive" name="Woodcutter.jar">
       <element id="module-output" name="Woodcutter" />
     </root>
